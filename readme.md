@@ -1,3 +1,8 @@
+## 声明
+这是取得别人的项目我用来练手的
+以下均为原信息！ 
+
+
 [![CircleCI branch](https://img.shields.io/circleci/project/github/duxianwei520/react/master.svg?style=flat-square)](https://circleci.com/gh/duxianwei520/react)
 [![GitHub forks](https://img.shields.io/github/forks/duxianwei520/react.svg)](https://github.com/duxianwei520/react/network)
 [![GitHub stars](https://img.shields.io/github/stars/duxianwei520/react.svg)](https://github.com/duxianwei520/react/stargazers)
@@ -10,7 +15,6 @@
 node8.7.0 + react@16.5.2 + redux@3.7.2 + react-router@3.2.0 + webpack@3.10.0 + axios@0.18.0 + less@2.7.1 + antd@3.18.2
 
 ## 交流
-QQ群：159697743
 
 ## 项目运行
 
@@ -156,6 +160,3 @@ login(){
 
 [MIT](https://github.com/duxianwei520/react/blob/master/LICENSE)
 
-
-## 交流
-想跟其他的使用react的小伙伴们交流的话，可以加入我创建的reactQQ群：159697743

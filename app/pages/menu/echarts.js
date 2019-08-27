@@ -48,7 +48,7 @@ export default class app extends Component {
   }
 
   loadChart() {
-    // console.log(this.chart)
+    console.log(this.chart)
     this.chartObj = echarts.init(this.chart)
     const option = {
       tooltip: {

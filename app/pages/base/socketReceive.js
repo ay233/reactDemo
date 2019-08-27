@@ -19,7 +19,6 @@ export default class app extends Component {
     this.state = {}
   }
 
-  componentDidMount() { }
 
   // #region vscode 1.17的收缩代码块功能  业务代码
 
@@ -32,7 +31,8 @@ export default class app extends Component {
   }
 
   render() {
-    const { socketCollection = {} } = this.props
+    // 定义路由视图 this.props.children
+    const { socketCollection = {}, children } = this.props
     return (
       <div className="page">
         socket receive 页面示例
@@ -43,6 +43,8 @@ export default class app extends Component {
               {JSON.stringify(socketCollection, null, 2)}
             </code>
           </pre>
+          {/* 渲染这个 child 路由组件 */}
+          {children || 'Welcome to your Inbox'}
         </div>
       </div>
     )

@@ -2,7 +2,12 @@
 module.exports = {
   data: {
     list: [
-
+      {
+        id: 10062,
+        resName: 'ayTest',
+        resKey: 'ay/1',
+        resIcon: 'statistics',
+      },
       {
         id: 10063,
         resName: '概览',

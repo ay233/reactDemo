@@ -6,13 +6,17 @@ import { set } from '@config'
 import * as base from '@pages/base' // 基础
 import * as sysSet from '@pages/set' // 设置中心-系统设置
 import * as menu from '@pages/menu' // 菜单
+import ay from '@pages/ayTest/ay';
 
 export default () => (
   <Router history={hashHistory}>
     <Route path="/" component={base.app} onEnter={isLogin}>
       <IndexRoute component={base.example} />
+      <Route path="/ay/:id" component={ay} />
       <Route path="/desk$/index" component={base.example} />
-      <Route path="/socketReceive" component={base.socketReceive} />
+      <Route path="/socketReceive" component={base.socketReceive}>
+        <Route path="ay/:id" component={ay} />
+      </Route>
       {/** *菜单 开始 */}
       <Route path="/echarts" component={menu.echarts} />
       <Route path="/editor" component={menu.editor} />

@@ -18,8 +18,15 @@ export default class app extends Component {
     this.state = {}
   }
 
-  componentDidMount() {}
-
+  componentDidMount() {
+    const id = this.props.params.id;
+    console.log(id);
+  }
+  componentDidUpdate(prevProps) {
+    // 上面步骤3，通过参数更新数据
+    const id = this.props.params.id;
+    console.log(id);
+  }
   // #region vscode 1.17的收缩代码块功能  业务代码
 
 
@@ -28,7 +35,7 @@ export default class app extends Component {
   render() {
     return (
       <div className="page">
-        示范页面
+        示范页面ahhahahahhahahahahhahahahhahah
       </div>
     )
   }
